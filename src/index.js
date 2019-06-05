@@ -1,3 +1,7 @@
+import parser from './parser';
 const values = document.getElementById('log').value;
 
-console.log(values);
+const game = new parser(values);
+game.runLog();
+
+game.printGames()
